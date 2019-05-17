@@ -11,7 +11,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class ConvertorTest {
     @Test
-    public void takingNumberOfDigit() {
+    public void gettingNumberOfDigit() {
         List<Integer> expect =  Arrays.asList(5,8,9);
         assertEquals(expect, Digit.getDigits("985"));
     }
