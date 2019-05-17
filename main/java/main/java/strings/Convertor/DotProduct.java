@@ -1,6 +1,5 @@
-package Convertor;
+package main.java.strings.Convertor;
 
-import java.util.ArrayList;
 import java.util.List;
 public class DotProduct{
     public static int getDotProducts(List<Integer> numbers1, List<Integer> numbers2) {

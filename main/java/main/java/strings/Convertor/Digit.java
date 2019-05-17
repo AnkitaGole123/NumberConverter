@@ -1,4 +1,4 @@
-package Convertor;
+package main.java.strings.Convertor;
 
 import java.util.ArrayList;
 import java.util.List;
