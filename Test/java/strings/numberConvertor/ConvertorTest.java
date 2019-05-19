@@ -10,14 +10,13 @@ import java.util.List;
 import static junit.framework.TestCase.assertEquals;
 
 public class ConvertorTest {
-    @Test
-    public void gettingNumberOfDigit() {
+    @Test public void gettingNumberOfDigit() {
         List<Integer> expect =  Arrays.asList(5,8,9);
         assertEquals(expect, Digit.getDigits("985"));
     }
-    public void takingPowerOfSeries() {
+    @Test public void gettingPowerOfSeries() {
         List<Integer> expect =  Arrays.asList(1,8,64);
-        assertEquals(expect, PowerSeries.getPowerSeries(5,4));
+        assertEquals(expect, PowerSeries.getPowerSeries(3,8));
     }
 }
 

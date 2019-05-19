@@ -1,5 +1,6 @@
 package main.java.strings.Convertor;
 
+import java.util.Collections;
 import java.util.List;
 public class NumberConvertor {
     public static void main(String s, String[] args) {
@@ -12,8 +13,8 @@ public class NumberConvertor {
             return;
         }
 
-        int decimal= main.java.strings.Convertor.DotProduct.getDotProducts(main.java.strings.Convertor.Digit.getDigits(number), main.java.strings.Convertor.PowerSeries.getPowerSeries(numberOfTerms, parsing.fromBase));
-        System.out.println("The decimal number of the number you have given is " + decimal);
+        List<Integer> decimal= Collections.singletonList(DotProduct.getProducts(Digit.getDigits(number), PowerSeries.getPowerSeries(numberOfTerms, parsing.fromBase)));
+        System.out.println("The decimal number of the number you have given is " + SumOfProduct.sumOfProduct(decimal));
         }
     private static boolean isNotValid(List<Integer>digits, int base) {
         for (int i = 0; i< digits.size(); i++){
