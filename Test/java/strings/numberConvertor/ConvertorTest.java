@@ -1,6 +1,7 @@
 package strings.numberConvertor;
 
 import main.java.strings.Convertor.Digit;
+import main.java.strings.Convertor.DotProduct;
 import main.java.strings.Convertor.PowerSeries;
 import main.java.strings.Convertor.SumOfProduct;
 import org.junit.Test;
@@ -24,5 +25,11 @@ public class ConvertorTest {
         List<Integer> expected = Arrays.asList(2,10,12);
         assertEquals(24, SumOfProduct.sumOfProduct(expected));
     }
+@Test public void gettingElementByElement() {
+    List<Integer> expected = Arrays.asList(4, 18, 100);
+    List<Integer> digitits = Arrays.asList(2, 3, 5);
+    List<Integer> powers = Arrays.asList(2, 6, 20);
+    assertEquals(expected, DotProduct.getProducts(digitits,powers));
+}
 }
 
